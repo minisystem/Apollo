@@ -1,6 +1,6 @@
-update=22/05/2015 07:44:53
+update=2016-10-04 6:52:43 PM
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=
@@ -60,3 +60,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=E:/Documents/KiCad/MyLibs/MySynthParts

@@ -28,12 +28,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:MySynthParts
 LIBS:voice-cache
 EELAYER 25 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -5246,4 +5247,16 @@ F 3 "" H 29200 20800 60  0000 C CNN
 	1    29200 20800
 	1    0    0    -1  
 $EndComp
+Text GLabel 29975 20500 2    60   Input ~ 0
+ENV_2
+Wire Wire Line
+	29850 20500 29975 20500
+Text Notes 29525 20725 0    60   ~ 0
+56K - 100K
+$Sheet
+S 23625 8425 2050 1700
+U 57F5D1D5
+F0 "Envelopes" 60
+F1 "envelopes.sch" 60
+$EndSheet
 $EndSCHEMATC
