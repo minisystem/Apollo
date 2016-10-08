@@ -1044,8 +1044,6 @@ Wire Wire Line
 Wire Wire Line
 	6325 9575 11625 9575
 Wire Wire Line
-	11625 9575 11625 12975
-Wire Wire Line
 	5925 12375 5925 12675
 Connection ~ 9200 13675
 Wire Wire Line
@@ -2211,4 +2209,34 @@ Wire Wire Line
 Connection ~ 11625 10925
 Text Notes 12575 11900 0    60   ~ 0
 ENV1 inversion works\nin simulation
+$Comp
+L R_US R?
+U 1 1 57FCB1DF
+P 11625 9275
+F 0 "R?" H 11525 9250 50  0000 C CNN
+F 1 "68K" H 11475 9325 50  0000 C CNN
+F 2 "MyModules:SM0603-R-JRL" H 11625 9275 60  0001 C CNN
+F 3 "" H 11625 9275 60  0001 C CNN
+F 4 "P10.0KCCT-ND" V 11625 9275 60  0001 C CNN "Digikey"
+	1    11625 9275
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 57FCB1E6
+P 11625 9000
+F 0 "#PWR?" H 11625 8850 50  0001 C CNN
+F 1 "+12V" H 11625 9140 50  0000 C CNN
+F 2 "" H 11625 9000 60  0000 C CNN
+F 3 "" H 11625 9000 60  0000 C CNN
+	1    11625 9000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11625 9000 11625 9075
+Wire Wire Line
+	11625 9575 11625 11125
+NoConn ~ 11625 9475
+Text Notes 11675 9450 0    50   ~ 0
+R224A - omit?
 $EndSCHEMATC
