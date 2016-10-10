@@ -174,13 +174,13 @@ F 3 "~" H 4375 8650 60  0000 C CNN
 $EndComp
 $Comp
 L TL072- U?
-U 1 1 5819C4D3
+U 2 1 5819C4D3
 P 6425 9800
 F 0 "U?" H 6375 10000 60  0000 L CNN
 F 1 "TL072-" H 6375 9550 60  0000 L CNN
 F 2 "MyModules:TSSOP8-JRL" H 6425 9800 60  0001 C CNN
 F 3 "~" H 6425 9800 60  0000 C CNN
-	1    6425 9800
+	2    6425 9800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1093,13 +1093,13 @@ F 4 "P56.0KCCT-ND" V 19200 8250 60  0001 C CNN "Digikey"
 $EndComp
 $Comp
 L TL072- U?
-U 1 1 5819C70B
+U 2 1 5819C70B
 P 20500 9800
 F 0 "U?" H 20450 10000 60  0000 L CNN
 F 1 "TL072-" H 20450 9550 60  0000 L CNN
 F 2 "MyModules:TSSOP8-JRL" H 20500 9800 60  0001 C CNN
 F 3 "~" H 20500 9800 60  0000 C CNN
-	1    20500 9800
+	2    20500 9800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2120,7 +2120,7 @@ L R_US R?
 U 1 1 5819C97C
 P 1900 9725
 F 0 "R?" V 1980 9725 50  0000 C CNN
-F 1 "100K" V 1800 9725 50  0000 C CNN
+F 1 "220K" V 1800 9725 50  0000 C CNN
 F 2 "MyModules:SM0603-R-JRL" H 1900 9725 60  0001 C CNN
 F 3 "" H 1900 9725 60  0001 C CNN
 F 4 "P91.0KCCT-ND" V 1900 9725 60  0001 C CNN "Digikey"
@@ -2138,8 +2138,8 @@ F 3 "~" H 1600 9925 60  0000 C CNN
 	1    1600 9925
 	-1   0    0    1   
 $EndComp
-Text Notes 1725 10100 0    60   ~ 0
-No reference voltage \nhere. May need to adjust R
+Text Notes 1725 10200 0    60   ~ 0
+No reference voltage \nhere. -10V on JP8. May \nneed to adjust R.
 $Comp
 L R_US R?
 U 1 1 5819C98B
@@ -2305,7 +2305,7 @@ L R_US R?
 U 1 1 5819C9EE
 P 15925 9725
 F 0 "R?" V 16005 9725 50  0000 C CNN
-F 1 "100K" V 15825 9725 50  0000 C CNN
+F 1 "220K" V 15825 9725 50  0000 C CNN
 F 2 "MyModules:SM0603-R-JRL" H 15925 9725 60  0001 C CNN
 F 3 "" H 15925 9725 60  0001 C CNN
 F 4 "P91.0KCCT-ND" V 15925 9725 60  0001 C CNN "Digikey"
@@ -2323,8 +2323,6 @@ F 3 "~" H 15625 9925 60  0000 C CNN
 	1    15625 9925
 	-1   0    0    1   
 $EndComp
-Text Notes 15750 10100 0    60   ~ 0
-No reference voltage \nhere. May need to adjust R
 $Comp
 L R_US R?
 U 1 1 5819C9FD
@@ -3238,4 +3236,11 @@ Wire Wire Line
 Wire Wire Line
 	25400 11250 26000 11250
 Connection ~ 25400 10375
+Text Notes 15775 10150 0    60   ~ 0
+No reference voltage \nhere. -10V on JP8. May \nneed to adjust R.
+NoConn ~ 3150 13225
+Text Notes 2750 6300 0    200  ~ 40
+VCO 1\n
+Text Notes 16800 6425 0    200  ~ 40
+VCO 2\n
 $EndSCHEMATC
