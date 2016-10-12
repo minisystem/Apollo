@@ -4477,8 +4477,10 @@ Simulated. Need to investigate \nfurther and test original JP8\nVCA modulation b
 Connection ~ 11450 16675
 Wire Wire Line
 	11850 16375 11100 16375
-Text Notes 16225 20050 0    60   ~ 0
-J112 Vgs(on) isn't low enough to block\n-ve inverted envelope voltages with -12V\ngate. Lower ENV amplitude or find different FET?\n
+Text Notes 16225 20175 0    60   ~ 0
+J112 Vgs(off) isn't low enough to block\n-ve inverted envelope voltages with -11V\ngate. Lower ENV amplitude or find different FET?\nON Semi TF412S has low Vgs{off) - will probably work\n2SK932 also looks promising\n
 Text Notes 13350 21125 0    60   ~ 0
-ENV_SEL needs to swing from \n+ve to -ve rail, so use comparator \nhere?
+ENV_SEL needs to swing close\n+ve and -ve rail. To keep JFET off\nneed <= -11V.
+Text Notes 24800 17225 0    60   ~ 0
+Probably need to use a lower Vgs(off) FET\nthan J112 here as in VCF envelope modulation\nselector circuit. 
 $EndSCHEMATC

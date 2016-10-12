@@ -3938,9 +3938,9 @@ Wire Wire Line
 Wire Wire Line
 	14500 7900 14350 7900
 Wire Wire Line
-	14350 8450 14350 7900
+	14350 7900 14350 8450
 Wire Wire Line
-	13425 8450 14350 8450
+	14350 8450 13425 8450
 $Comp
 L R_US R?
 U 1 1 58142DA0
@@ -4463,11 +4463,10 @@ Wire Wire Line
 	18100 3850 18225 3850
 Wire Wire Line
 	18625 3850 19250 3850
-Connection ~ 18850 3850
 Text Notes 19475 3150 0    60   ~ 0
 CD4053s are separate ICs\non JP8 module board.\nBecause of cross talk?
-Text Notes 17775 4300 0    60   ~ 0
-CD4066 instead using\nextra swtiches to shunt inputs\nto minimize crosstalk?
+Text Notes 17950 4075 0    60   ~ 0
+Maybe JFET shunts here?
 Wire Wire Line
 	19075 2500 19225 2500
 Wire Wire Line
@@ -4477,8 +4476,10 @@ Simulated. Need to investigate \nfurther and test original JP8\nVCA modulation b
 Connection ~ 11450 16675
 Wire Wire Line
 	11850 16375 11100 16375
-Text Notes 16225 20050 0    60   ~ 0
-J112 Vgs(on) isn't low enough to block\n-ve inverted envelope voltages with -12V\ngate. Lower ENV amplitude or find different FET?\n
+Text Notes 16225 20175 0    60   ~ 0
+J112 Vgs(off) isn't low enough to block\n-ve inverted envelope voltages with -11V\ngate. Lower ENV amplitude or find different FET?\nON Semi TF412S has low Vgs{off) - will probably work\n2SK932 also looks promising\n
 Text Notes 13350 21125 0    60   ~ 0
-ENV_SEL needs to swing from \n+ve to -ve rail, so use comparator \nhere?
+ENV_SEL needs to swing close\n+ve and -ve rail. To keep JFET off\nneed <= -11V.
+Text Notes 24800 17225 0    60   ~ 0
+Probably need to use a lower Vgs(off) FET\nthan J112 here as in VCF envelope modulation\nselector circuit. 
 $EndSCHEMATC
