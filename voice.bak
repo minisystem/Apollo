@@ -3938,9 +3938,9 @@ Wire Wire Line
 Wire Wire Line
 	14500 7900 14350 7900
 Wire Wire Line
-	14350 8450 14350 7900
+	14350 7900 14350 8450
 Wire Wire Line
-	13425 8450 14350 8450
+	14350 8450 13425 8450
 $Comp
 L R_US R?
 U 1 1 58142DA0
@@ -4463,11 +4463,10 @@ Wire Wire Line
 	18100 3850 18225 3850
 Wire Wire Line
 	18625 3850 19250 3850
-Connection ~ 18850 3850
 Text Notes 19475 3150 0    60   ~ 0
 CD4053s are separate ICs\non JP8 module board.\nBecause of cross talk?
-Text Notes 17775 4300 0    60   ~ 0
-CD4066 instead using\nextra swtiches to shunt inputs\nto minimize crosstalk?
+Text Notes 17950 4075 0    60   ~ 0
+Maybe JFET shunts here?
 Wire Wire Line
 	19075 2500 19225 2500
 Wire Wire Line
@@ -4483,4 +4482,14 @@ Text Notes 13350 21125 0    60   ~ 0
 ENV_SEL needs to swing close\n+ve and -ve rail. To keep JFET off\nneed <= -11V.
 Text Notes 24800 17225 0    60   ~ 0
 Probably need to use a lower Vgs(off) FET\nthan J112 here as in VCF envelope modulation\nselector circuit. 
+Text Notes 29200 17325 0    60   ~ 0
+When LEVEL CV = 0V there is some\nbleedthrough of ENV_2 signal. When LEVEL CV < 0V\nthen there is no output. Amount of bleedthrough varies \nfrom voice to voice of JP8\n
+Text Notes 14275 15325 2    60   ~ 0
+OFFSET
+Text Notes 28850 13925 2    60   ~ 0
+OFFSET
+Text Notes 17300 1875 2    60   ~ 0
+OFFSET
+Text Notes 23500 2525 2    60   ~ 0
+OFFSET
 $EndSCHEMATC

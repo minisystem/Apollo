@@ -2329,7 +2329,7 @@ L TL072- U?
 U 1 1 57F890B6
 P 13975 16625
 F 0 "U?" H 13925 16825 60  0000 L CNN
-F 1 "TL072-" H 14100 16500 60  0000 L CNN
+F 1 "RC4558" H 14100 16500 60  0000 L CNN
 F 2 "MyModules:TSSOP8-JRL" H 13975 16625 60  0001 C CNN
 F 3 "~" H 13975 16625 60  0000 C CNN
 	1    13975 16625
@@ -2430,7 +2430,7 @@ L TL072- U?
 U 1 1 57FC4FC2
 P 9650 16675
 F 0 "U?" H 9600 16875 60  0000 L CNN
-F 1 "TL072-" H 9775 16550 60  0000 L CNN
+F 1 "RC4558" H 9775 16550 60  0000 L CNN
 F 2 "MyModules:TSSOP8-JRL" H 9650 16675 60  0001 C CNN
 F 3 "~" H 9650 16675 60  0000 C CNN
 	1    9650 16675
@@ -4482,4 +4482,14 @@ Text Notes 13350 21125 0    60   ~ 0
 ENV_SEL needs to swing close\n+ve and -ve rail. To keep JFET off\nneed <= -11V.
 Text Notes 24800 17225 0    60   ~ 0
 Probably need to use a lower Vgs(off) FET\nthan J112 here as in VCF envelope modulation\nselector circuit. 
+Text Notes 29200 17325 0    60   ~ 0
+When LEVEL CV = 0V there is some\nbleedthrough of ENV_2 signal. When LEVEL CV < 0V\nthen there is no output. Amount of bleedthrough varies \nfrom voice to voice of JP8\n
+Text Notes 14275 15325 2    60   ~ 0
+OFFSET
+Text Notes 28850 13925 2    60   ~ 0
+OFFSET
+Text Notes 17300 1875 2    60   ~ 0
+OFFSET
+Text Notes 23500 2525 2    60   ~ 0
+OFFSET
 $EndSCHEMATC
