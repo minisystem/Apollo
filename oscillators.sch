@@ -870,7 +870,7 @@ F 4 "P10.0KCCT-ND" V 13050 11075 60  0001 C CNN "Digikey"
 	0    -1   -1   0   
 $EndComp
 Text GLabel 13375 11075 2    60   Output ~ 0
-VCO1_TUNE
+VCO1_AUTOTUNE
 $Comp
 L D D?
 U 1 1 5819C682
@@ -3201,7 +3201,7 @@ F 4 "P10.0KCCT-ND" V 26200 11250 60  0001 C CNN "Digikey"
 	0    -1   -1   0   
 $EndComp
 Text GLabel 26525 11250 2    60   Output ~ 0
-VCO2_TUNE
+VCO2_AUTOTUNE
 $Comp
 L D D?
 U 1 1 5819CBF8

@@ -113,7 +113,7 @@ F 4 "P56.0KCCT-ND" V 17050 8525 60  0001 C CNN "Digikey"
 	0    -1   -1   0   
 $EndComp
 Text GLabel 16675 8525 0    60   Input ~ 0
-PWM
+PWM_LEVEL
 $Comp
 L R_US R?
 U 1 1 57F31489
@@ -924,7 +924,7 @@ F 3 "~" H 26250 12775 60  0000 C CNN
 	1    26250 12775
 	-1   0    0    1   
 $EndComp
-Text GLabel 27500 11775 2    60   Input ~ 0
+Text GLabel 28725 11775 2    60   Input ~ 0
 RES_CTRL
 $Comp
 L TL072- U?
@@ -2046,7 +2046,7 @@ ENV_2
 Text Notes 29425 17925 0    60   ~ 0
 56K - 100K
 $Sheet
-S 6000 1575 2050 1700
+S 4975 1600 2250 1875
 U 57F5D1D5
 F0 "Envelopes" 60
 F1 "envelopes.sch" 60
@@ -3587,7 +3587,7 @@ Wire Wire Line
 Wire Wire Line
 	26250 12175 26250 10675
 Wire Wire Line
-	27250 11775 27500 11775
+	27250 11775 27825 11775
 Wire Wire Line
 	27250 12275 27250 11775
 Connection ~ 11100 13675
@@ -4492,4 +4492,163 @@ Text Notes 17300 1875 2    60   ~ 0
 OFFSET
 Text Notes 23500 2525 2    60   ~ 0
 OFFSET
+Text Notes 13725 20700 0    60   ~ 0
+-11V to +12V
+Text Notes 25975 16775 0    60   ~ 0
+-11V to +12V
+Text Notes 14850 2600 2    60   ~ 0
+OFFSET
+Text Notes 7500 5625 2    60   ~ 0
+OFFSET
+Text GLabel 7725 5750 0    60   Input ~ 0
+VCO_ENV_MOD_BAL
+Text GLabel 7725 5900 0    60   Input ~ 0
+VCO_MOD_BAL
+Text Notes 3875 5625 2    60   ~ 0
+-11V to +12V switch
+Text Notes 2475 5600 2    60   ~ 0
+10V switch
+Text Notes 4800 5625 2    60   ~ 0
+MODULATION 
+Text Notes 5375 5625 2    60   ~ 0
+CV
+Text Notes 8500 5625 2    60   ~ 0
+OUTPUT
+Text GLabel 5650 5750 0    60   Input ~ 0
+VCO_ENV_MOD
+Text GLabel 4775 5750 0    60   Input ~ 0
+VCO_LFO_MOD
+Text GLabel 2600 5750 0    60   Input ~ 0
+VCO1_MOD_SW
+Text GLabel 2600 5900 0    60   Input ~ 0
+VCO2_MOD_SW
+Text GLabel 7725 6050 0    60   Input ~ 0
+XMOD_BAL
+Text GLabel 5625 5900 0    60   Input ~ 0
+CROSSMOD
+Text GLabel 4775 5900 0    60   Input ~ 0
+LFO
+Text GLabel 2600 6050 0    60   Input ~ 0
+PWM_SEL
+Text GLabel 2600 6200 0    60   Input ~ 0
+PW/PWM
+Text GLabel 5625 6050 0    60   Input ~ 0
+PWM_LEVEL
+Text GLabel 5625 6200 0    60   Input ~ 0
+VCO1_LEVEL
+Text GLabel 5625 6350 0    60   Input ~ 0
+VCO2_LEVEL
+$Comp
+L MMBT3906 Q?
+U 1 1 5809D2EC
+P 28025 11875
+F 0 "Q?" H 28225 11950 50  0000 L CNN
+F 1 "MMBT3906" H 27650 12100 50  0000 L CNN
+F 2 "SOT-23" H 28225 11800 50  0001 L CIN
+F 3 "" H 28025 11875 50  0000 L CNN
+	1    28025 11875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND_R #PWR?
+U 1 1 5809EC98
+P 28025 12075
+F 0 "#PWR?" H 28025 12075 30  0001 C CNN
+F 1 "GND_R" H 28025 11975 30  0001 C CNN
+F 2 "" H 28025 12075 60  0000 C CNN
+F 3 "" H 28025 12075 60  0000 C CNN
+	1    28025 12075
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_US R?
+U 1 1 5809F49E
+P 28475 11775
+F 0 "R?" V 28555 11775 50  0000 C CNN
+F 1 "22K" V 28395 11775 50  0000 C CNN
+F 2 "MyModules:SM0603-R-JRL" H 28475 11775 60  0001 C CNN
+F 3 "~" H 28475 11775 60  0000 C CNN
+	1    28475 11775
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	28275 11775 28225 11775
+Wire Wire Line
+	28675 11775 28725 11775
+Text Notes 28275 11975 0    50   ~ 0
+15K - 25K\n
+Text GLabel 5625 6500 0    60   Input ~ 0
+RES_CTRL
+Text GLabel 8200 5750 2    60   Output ~ 0
+OUT
+Text GLabel 7725 6200 0    60   Input ~ 0
+VCA_BAL
+Text GLabel 3600 5750 0    60   Input ~ 0
+VCF_12dB
+Text GLabel 3600 5900 0    60   Input ~ 0
+VCF_24dB
+Text GLabel 4775 6050 0    60   Input ~ 0
+LEVEL
+Text GLabel 3600 6050 0    60   Input ~ 0
+ENV_SEL
+Text GLabel 7725 6350 0    60   Input ~ 0
+VCF_TUNE
+Text GLabel 5625 6650 0    60   Input ~ 0
+VCF_KF
+Text GLabel 4775 6200 0    60   Input ~ 0
+VCF_CUTOFF
+Text GLabel 5625 6800 0    60   Input ~ 0
+VCF_ENV_MOD
+Text GLabel 1275 5750 0    60   Input ~ 0
+VCO1_RANGE
+Text GLabel 6650 6050 0    60   Input ~ 0
+VCO1_TUNE
+Text GLabel 8200 5900 2    60   Output ~ 0
+VCO1_AUTOTUNE
+Text GLabel 8200 6050 2    60   Output ~ 0
+VCO2_AUTOTUNE
+Text GLabel 1675 5750 0    60   Input ~ 0
+GATE
+Text Notes 1600 5600 2    60   ~ 0
+5V
+Text GLabel 2600 6350 0    60   Input ~ 0
+VCO1_WF-0
+Text GLabel 2600 6500 0    60   Input ~ 0
+VCO1_WF-1
+Text GLabel 2600 6650 0    60   Input ~ 0
+VCO2_WF-0
+Text GLabel 2600 6800 0    60   Input ~ 0
+VCO2_WF-1
+Text GLabel 1275 5925 0    60   Input ~ 0
+NOISE
+Text GLabel 5625 7250 0    60   Input ~ 0
+ENV1_R
+Text GLabel 5625 7400 0    60   Input ~ 0
+ENV1_S
+Text GLabel 5625 7100 0    60   Input ~ 0
+ENV1_D
+Text GLabel 5625 6950 0    60   Input ~ 0
+ENV1_A
+Text GLabel 5625 7850 0    60   Input ~ 0
+ENV2_R
+Text GLabel 5625 8000 0    60   Input ~ 0
+ENV2_S
+Text GLabel 5625 7700 0    60   Input ~ 0
+ENV2_D
+Text GLabel 5625 7550 0    60   Input ~ 0
+ENV2_A
+Text GLabel 2600 6950 0    60   Input ~ 0
+SYNC_CTRL
+Text Notes 6925 5450 2    60   ~ 0
+VOICE
+Text GLabel 6650 5750 0    60   Input ~ 0
+KCV_1
+Text GLabel 6650 5900 0    60   Input ~ 0
+KCV_2
+Text GLabel 6650 6200 0    60   Input ~ 0
+VCO2_TUNE
+Text Notes 5075 5450 2    60   ~ 0
+COMMON\n
+Text Notes 6450 5625 2    60   ~ 0
+CV
 $EndSCHEMATC
