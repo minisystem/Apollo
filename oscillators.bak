@@ -3385,4 +3385,14 @@ F 3 "" H 20800 8250 50  0000 L CNN
 	1    21000 8250
 	1    0    0    -1  
 $EndComp
+Text Notes 10375 9275 0    60   ~ 0
+NPN here is 2SC752-Y
+Text Notes 24475 9250 0    60   ~ 0
+NPN here is 2SC752-Y
+Text Notes 12575 12850 0    60   ~ 0
+NPN here is 2SC752-Y
+Text Notes 10450 6700 0    60   ~ 0
+8V reset point
+Text Notes 24525 6675 0    60   ~ 0
+8V reset point
 $EndSCHEMATC

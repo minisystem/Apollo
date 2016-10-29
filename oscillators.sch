@@ -443,7 +443,7 @@ F 2 "MyModules:SM0603-R-JRL" H 10175 9225 60  0001 C CNN
 F 3 "" H 10175 9225 60  0001 C CNN
 F 4 "P10.0KCCT-ND" V 10175 9225 60  0001 C CNN "Digikey"
 	1    10175 9225
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L GND_R #PWR?
@@ -1306,7 +1306,7 @@ F 2 "MyModules:SM0603-R-JRL" H 24250 9225 60  0001 C CNN
 F 3 "" H 24250 9225 60  0001 C CNN
 F 4 "P10.0KCCT-ND" V 24250 9225 60  0001 C CNN "Digikey"
 	1    24250 9225
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 $Comp
 L GND_R #PWR?
@@ -3391,4 +3391,12 @@ Text Notes 24475 9250 0    60   ~ 0
 NPN here is 2SC752-Y
 Text Notes 12575 12850 0    60   ~ 0
 NPN here is 2SC752-Y
+Text Notes 10450 6700 0    60   ~ 0
+8V reset point
+Text Notes 24525 6675 0    60   ~ 0
+8V reset point
+Text Notes 24475 9350 0    60   ~ 0
+'Ultrafast' switching BJT
+Text Notes 10400 9375 0    60   ~ 0
+'Ultrafast' switching BJT
 $EndSCHEMATC
