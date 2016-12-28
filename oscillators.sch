@@ -3205,4 +3205,6 @@ F 3 "" H 11225 12800 50  0000 L CNN
 $EndComp
 Text Notes 3800 12375 0    60   ~ 0
 Should there be a -10V reference here?
+Text Notes 3300 12975 0    60   ~ 0
+add BJTs to these to make a\nproper regulator that doesn't have\na whackload of zener current
 $EndSCHEMATC
