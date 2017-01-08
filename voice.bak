@@ -5304,4 +5304,14 @@ Wire Notes Line
 	26325 21200 19100 21200
 Wire Notes Line
 	19100 21200 19100 18150
+Text Notes 4725 17225 0    60   ~ 0
+VCO1_RANGE derived from two\npair of switched +10V signals.\nSee 'RANGE CV DAC' section of\nmodule controller schematic
+Text GLabel 4775 6650 0    60   Input ~ 0
+VCO1_MOD_SUM
+Text GLabel 4775 6800 0    60   Input ~ 0
+VCO2_MOD_SUM
+Text Notes 3250 7250 0    60   ~ 0
+VCO1/2_MOD_SUM are mod signals\nsummed on modulatoin controller \nboard. They sum performance modulation\ncontrols as well as range for VCO2
+Text Notes 15850 16700 2    100  ~ 0
+Change to Toshiba\nmatched PNP here
 $EndSCHEMATC

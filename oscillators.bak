@@ -2079,7 +2079,7 @@ F 3 "" H 18300 8250 60  0000 C CNN
 	1    18300 8250
 	1    0    0    -1  
 $EndComp
-Text GLabel 15525 8550 0    60   Input ~ 0
+Text GLabel 15575 8550 0    60   Input ~ 0
 KCV_2
 $Comp
 L POT_US VR?
@@ -2192,7 +2192,7 @@ F 4 "P91.0KCCT-ND" V 15950 9125 60  0001 C CNN "Digikey"
 	1    15950 9125
 	0    -1   -1   0   
 $EndComp
-Text GLabel 15725 9125 0    60   Input ~ 0
+Text GLabel 15625 9125 0    60   Input ~ 0
 VCO2_MOD
 Text GLabel 1500 9425 0    60   Input ~ 0
 VCO1_XMOD
@@ -2425,7 +2425,7 @@ Connection ~ 2275 9425
 Wire Wire Line
 	2275 9425 1500 9425
 Wire Wire Line
-	15725 9125 15750 9125
+	15625 9125 15750 9125
 Connection ~ 16300 9125
 Wire Wire Line
 	16300 9125 16150 9125
@@ -2452,7 +2452,7 @@ Connection ~ 16300 8550
 Wire Wire Line
 	16300 8350 16300 9725
 Wire Wire Line
-	15525 8550 15725 8550
+	15575 8550 15725 8550
 Connection ~ 17000 8550
 Wire Notes Line
 	16900 7950 16900 7625
@@ -3205,4 +3205,46 @@ F 3 "" H 11225 12800 50  0000 L CNN
 $EndComp
 Text Notes 3800 12375 0    60   ~ 0
 Should there be a -10V reference here?
+Text GLabel 1425 8875 0    60   Input ~ 0
+VCO1_MOD_SUM
+Text GLabel 15600 8850 0    60   Input ~ 0
+VCO2_MOD_SUM
+$Comp
+L R_US R?
+U 1 1 58657F6C
+P 1900 8875
+F 0 "R?" V 1980 8875 50  0000 C CNN
+F 1 "100K" V 1800 8875 50  0000 C CNN
+F 2 "MyModules:SM0603-R-JRL" H 1900 8875 60  0001 C CNN
+F 3 "" H 1900 8875 60  0001 C CNN
+F 4 "P91.0KCCT-ND" V 1900 8875 60  0001 C CNN "Digikey"
+	1    1900 8875
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 8875 2275 8875
+Connection ~ 2275 8875
+Wire Wire Line
+	1700 8875 1425 8875
+$Comp
+L R_US R?
+U 1 1 58659749
+P 15950 8850
+F 0 "R?" V 16030 8850 50  0000 C CNN
+F 1 "100K" V 15850 8850 50  0000 C CNN
+F 2 "MyModules:SM0603-R-JRL" H 15950 8850 60  0001 C CNN
+F 3 "" H 15950 8850 60  0001 C CNN
+F 4 "P91.0KCCT-ND" V 15950 8850 60  0001 C CNN "Digikey"
+	1    15950 8850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16150 8850 16300 8850
+Connection ~ 16300 8850
+Wire Wire Line
+	15750 8850 15600 8850
+Text Notes 6975 7725 0    60   ~ 0
+TOSHIBA NPN\nmatched pair?
+Text Notes 21150 8000 0    60   ~ 0
+TOSHIBA NPN\nmatched pair?
 $EndSCHEMATC
