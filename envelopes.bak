@@ -2217,10 +2217,6 @@ F 3 "" H 3475 9525 50  0000 L CNN
 	1    3475 9525
 	1    0    0    -1  
 $EndComp
-Text Notes 8475 9925 0    60   ~ 0
-Change to PMP4201/5201 pairs?
-Text Notes 23500 9900 0    60   ~ 0
-Change to PMP4201/5201 pairs?
 Text Notes 1875 10750 0    60   ~ 0
 Change to generate 0-5V response
 Text Notes 17000 10750 0    60   ~ 0
