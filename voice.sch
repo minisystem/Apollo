@@ -2433,8 +2433,6 @@ Text GLabel 13425 4500 0    60   Input ~ 0
 VCO_ENV_MOD
 Text Notes 12775 3500 0    60   ~ 0
 low offset LM13700:\nincrease input level, \nreduce Iabc relative \nto BA662 configuration
-Text GLabel 13550 3675 0    60   Input ~ 0
-ENV
 Text Notes 13625 3875 0    50   ~ 0
 (180K)\n
 $Comp
@@ -2898,17 +2896,6 @@ F 4 "P10.0KCCT-ND" V 13525 8100 60  0001 C CNN "Digikey"
 	1    13525 8100
 	1    0    0    1   
 $EndComp
-$Comp
-L +12V #PWR?
-U 1 1 58153D35
-P 13525 7825
-F 0 "#PWR?" H 13525 7675 50  0001 C CNN
-F 1 "+12V" H 13525 7965 50  0000 C CNN
-F 2 "" H 13525 7825 60  0000 C CNN
-F 3 "" H 13525 7825 60  0000 C CNN
-	1    13525 7825
-	1    0    0    -1  
-$EndComp
 Text Notes 13100 7725 0    60   ~ 0
 +10V reference\nin JP8\n
 $Comp
@@ -3135,8 +3122,6 @@ F 4 "P10.0KCCT-ND" V 13975 20225 60  0001 C CNN "Digikey"
 	1    13975 20225
 	-1   0    0    1   
 $EndComp
-Text GLabel 12925 19050 0    60   Output ~ 0
-ENV
 $Comp
 L R_US R?
 U 1 1 57F94DFC
@@ -3359,9 +3344,9 @@ Text GLabel 4775 6200 0    60   Input ~ 0
 VCF_CUTOFF
 Text GLabel 5625 6650 0    60   Input ~ 0
 VCF_ENV_MOD
-Text GLabel 1275 5750 0    60   Input ~ 0
+Text GLabel 5625 8000 0    60   Input ~ 0
 VCO1_RANGE
-Text GLabel 6650 6050 0    60   Input ~ 0
+Text GLabel 7750 6950 0    60   Input ~ 0
 VCO1_TUNE
 Text GLabel 8200 5900 2    60   Output ~ 0
 VCO1_AUTOTUNE
@@ -3405,14 +3390,12 @@ Text GLabel 6650 5750 0    60   Input ~ 0
 KCV_1
 Text GLabel 6650 5900 0    60   Input ~ 0
 KCV_2
-Text GLabel 6650 6200 0    60   Input ~ 0
+Text GLabel 7750 6800 0    60   Input ~ 0
 VCO2_TUNE
 Text Notes 5075 5450 2    60   ~ 0
 COMMON\n
 Text Notes 6450 5625 2    60   ~ 0
 CV
-Text Notes 16400 4500 0    60   ~ 0
-Toshiba TA75S558F seems like\nSC74A/SOT573 single equivalent\nto RC4558
 $Comp
 L TA75S558F U15
 U 1 1 580F5AC6
@@ -3811,172 +3794,6 @@ F 3 "" H 30725 13775 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 2SA1832 Q?
-U 1 1 58609046
-P 23575 19800
-F 0 "Q?" H 23250 19500 50  0000 L CNN
-F 1 "2SA1832" H 23250 19575 50  0000 L CNN
-F 2 "SOT-23" H 23775 19725 50  0001 L CIN
-F 3 "" H 23575 19800 50  0000 L CNN
-	1    23575 19800
-	1    0    0    1   
-$EndComp
-$Comp
-L 2SC4738 Q?
-U 1 1 5860C1F3
-P 24825 20050
-F 0 "Q?" H 25025 20125 50  0000 L CNN
-F 1 "2SC4738" H 25025 20050 50  0000 L CNN
-F 2 "SOT-23" H 25025 19975 50  0001 L CIN
-F 3 "" H 24825 20050 50  0000 L CNN
-	1    24825 20050
-	1    0    0    -1  
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 5860D9C4
-P 23675 19325
-F 0 "#PWR?" H 23675 19175 50  0001 C CNN
-F 1 "+12V" H 23675 19465 50  0000 C CNN
-F 2 "" H 23675 19325 60  0000 C CNN
-F 3 "" H 23675 19325 60  0000 C CNN
-	1    23675 19325
-	1    0    0    -1  
-$EndComp
-$Comp
-L -12V #PWR?
-U 1 1 5860F20F
-P 24575 20525
-F 0 "#PWR?" H 24575 20625 30  0001 C CNN
-F 1 "-12V" H 24575 20675 50  0000 C CNN
-F 2 "~" H 24575 20525 60  0000 C CNN
-F 3 "~" H 24575 20525 60  0000 C CNN
-	1    24575 20525
-	-1   0    0    1   
-$EndComp
-$Comp
-L R_US R?
-U 1 1 5860FB33
-P 24925 19575
-F 0 "R?" H 24825 19550 50  0000 C CNN
-F 1 "47K" H 24800 19625 50  0000 C CNN
-F 2 "MyModules:SM0603-R-JRL" H 24925 19575 60  0001 C CNN
-F 3 "" H 24925 19575 60  0001 C CNN
-F 4 "P10.0KCCT-ND" V 24925 19575 60  0001 C CNN "Digikey"
-	1    24925 19575
-	-1   0    0    1   
-$EndComp
-$Comp
-L R_US R?
-U 1 1 586110D2
-P 24300 20050
-F 0 "R?" V 24200 20100 50  0000 C CNN
-F 1 "47K" V 24200 19950 50  0000 C CNN
-F 2 "MyModules:SM0603-R-JRL" H 24300 20050 60  0001 C CNN
-F 3 "" H 24300 20050 60  0001 C CNN
-F 4 "P10.0KCCT-ND" V 24300 20050 60  0001 C CNN "Digikey"
-	1    24300 20050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R_US R?
-U 1 1 58611684
-P 23075 19800
-F 0 "R?" V 23150 19975 50  0000 C CNN
-F 1 "100K" V 23125 19625 50  0000 C CNN
-F 2 "MyModules:SM0603-R-JRL" H 23075 19800 60  0001 C CNN
-F 3 "" H 23075 19800 60  0001 C CNN
-F 4 "P10.0KCCT-ND" V 23075 19800 60  0001 C CNN "Digikey"
-	1    23075 19800
-	0    -1   -1   0   
-$EndComp
-Text GLabel 22750 19800 0    60   Input ~ 0
-VCF_MODE_SEL
-$Comp
-L R_US R?
-U 1 1 58616DDE
-P 24575 20325
-F 0 "R?" H 24475 20300 50  0000 C CNN
-F 1 "10K" H 24450 20375 50  0000 C CNN
-F 2 "MyModules:SM0603-R-JRL" H 24575 20325 60  0001 C CNN
-F 3 "" H 24575 20325 60  0001 C CNN
-F 4 "P10.0KCCT-ND" V 24575 20325 60  0001 C CNN "Digikey"
-	1    24575 20325
-	-1   0    0    1   
-$EndComp
-$Comp
-L -12V #PWR?
-U 1 1 586172B9
-P 24925 20525
-F 0 "#PWR?" H 24925 20625 30  0001 C CNN
-F 1 "-12V" H 24925 20675 50  0000 C CNN
-F 2 "~" H 24925 20525 60  0000 C CNN
-F 3 "~" H 24925 20525 60  0000 C CNN
-	1    24925 20525
-	-1   0    0    1   
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 586193EF
-P 24925 19300
-F 0 "#PWR?" H 24925 19150 50  0001 C CNN
-F 1 "+12V" H 24925 19440 50  0000 C CNN
-F 2 "" H 24925 19300 60  0000 C CNN
-F 3 "" H 24925 19300 60  0000 C CNN
-	1    24925 19300
-	1    0    0    -1  
-$EndComp
-Text GLabel 24175 18575 2    60   Output ~ 0
-VCF_24dB
-Text GLabel 25375 18575 2    60   Output ~ 0
-VCF_12dB
-$Comp
-L C_US C?
-U 1 1 586216C3
-P 24250 18925
-F 0 "C?" V 24350 19075 50  0000 L CNN
-F 1 "0.022μ" V 24350 18550 50  0000 L CNN
-F 2 "" H 24250 18925 60  0000 C CNN
-F 3 "" H 24250 18925 60  0000 C CNN
-F 4 "X7R" V 24525 19050 50  0001 C CNN "Type"
-	1    24250 18925
-	0    -1   -1   0   
-$EndComp
-$Comp
-L C_US C?
-U 1 1 58624513
-P 25575 18925
-F 0 "C?" V 25675 19075 50  0000 L CNN
-F 1 "0.022μ" V 25675 18550 50  0000 L CNN
-F 2 "" H 25575 18925 60  0000 C CNN
-F 3 "" H 25575 18925 60  0000 C CNN
-F 4 "X7R" V 25850 19050 50  0001 C CNN "Type"
-	1    25575 18925
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND_R #PWR?
-U 1 1 58624924
-P 25975 19050
-F 0 "#PWR?" H 25975 19050 30  0001 C CNN
-F 1 "GND_R" H 25975 18950 30  0001 C CNN
-F 2 "" H 25975 19050 60  0000 C CNN
-F 3 "" H 25975 19050 60  0000 C CNN
-	1    25975 19050
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND_R #PWR?
-U 1 1 58625C92
-P 24650 19050
-F 0 "#PWR?" H 24650 19050 30  0001 C CNN
-F 1 "GND_R" H 24650 18950 30  0001 C CNN
-F 2 "" H 24650 19050 60  0000 C CNN
-F 3 "" H 24650 19050 60  0000 C CNN
-	1    24650 19050
-	1    0    0    -1  
-$EndComp
-$Comp
 L TEST_POINT TP?
 U 1 1 58627D70
 P 27250 14375
@@ -4020,77 +3837,10 @@ F 3 "" H 10575 11175 60  0000 C CNN
 	1    10575 11175
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2600 7100 0    60   Input ~ 0
-VCF_MODE_SEL
-$Comp
-L 2SA1832 Q?
-U 1 1 58642C6C
-P 20650 19775
-F 0 "Q?" H 20850 19500 50  0000 L CNN
-F 1 "2SA1832" H 20850 19575 50  0000 L CNN
-F 2 "SOT-23" H 20850 19700 50  0001 L CIN
-F 3 "" H 20650 19775 50  0000 L CNN
-	1    20650 19775
-	1    0    0    1   
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 58642C72
-P 20750 19300
-F 0 "#PWR?" H 20750 19150 50  0001 C CNN
-F 1 "+12V" H 20750 19440 50  0000 C CNN
-F 2 "" H 20750 19300 60  0000 C CNN
-F 3 "" H 20750 19300 60  0000 C CNN
-	1    20750 19300
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_US R?
-U 1 1 58642C79
-P 20150 19775
-F 0 "R?" V 20225 19950 50  0000 C CNN
-F 1 "100K" V 20200 19600 50  0000 C CNN
-F 2 "MyModules:SM0603-R-JRL" H 20150 19775 60  0001 C CNN
-F 3 "" H 20150 19775 60  0001 C CNN
-F 4 "P10.0KCCT-ND" V 20150 19775 60  0001 C CNN "Digikey"
-	1    20150 19775
-	0    -1   -1   0   
-$EndComp
-Text GLabel 19825 19775 0    60   Input ~ 0
-ENV_1/2
-$Comp
-L -12V #PWR?
-U 1 1 58643F1D
-P 20750 20525
-F 0 "#PWR?" H 20750 20625 30  0001 C CNN
-F 1 "-12V" H 20750 20675 50  0000 C CNN
-F 2 "~" H 20750 20525 60  0000 C CNN
-F 3 "~" H 20750 20525 60  0000 C CNN
-	1    20750 20525
-	-1   0    0    1   
-$EndComp
-$Comp
-L R_US R?
-U 1 1 58643F24
-P 20750 20325
-F 0 "R?" H 20650 20300 50  0000 C CNN
-F 1 "4.7K" H 20625 20375 50  0000 C CNN
-F 2 "MyModules:SM0603-R-JRL" H 20750 20325 60  0001 C CNN
-F 3 "" H 20750 20325 60  0001 C CNN
-F 4 "P10.0KCCT-ND" V 20750 20325 60  0001 C CNN "Digikey"
-	1    20750 20325
-	-1   0    0    1   
-$EndComp
-Text GLabel 21175 20050 2    60   Output ~ 0
-ENV_SEL
-Text GLabel 2600 7250 0    60   Input ~ 0
-ENV_1/2
 Text Notes 1950 5350 2    60   ~ 0
 How does VCO1 range work?
 Text GLabel 5625 6500 0    60   Input ~ 0
 HPF
-Text Notes 24050 20500 2    60   ~ 0
-These need to be moved to module controller board
 Text Notes 4725 17225 0    60   ~ 0
 VCO1_RANGE derived from two\npair of switched +10V signals.\nSee 'RANGE CV DAC' section of\nmodule controller schematic
 Text GLabel 4775 6650 0    60   Input ~ 0
@@ -4101,7 +3851,7 @@ Text Notes 3250 7250 0    60   ~ 0
 VCO1/2_MOD_SUM are mod signals\nsummed on modulatoin controller \nboard. They sum performance modulation\ncontrols as well as range for VCO2
 Text Notes 24800 17325 0    60   ~ 0
 Probably need to use a lower Vgs(off) FET\nthan J112 here as in VCF envelope modulation\nselector circuit. Try 2SK208 - SMT 2SK30\nequivalent. Should be good to +/- 8V
-Text Notes 5850 7225 0    60   ~ 0
+Text Notes 5850 7750 0    60   ~ 0
 All modulation CVs are from 8 bit DAC. All are 0-5V except \nenvelope sustains.  Filter cutoff is 8 bit 0-5V, scaled to 0-10V\nat a later summing node.  All pitch CVS are from 14 bit DAC\nand use 0-10V
 $Comp
 L PMP5201G Q?
@@ -5117,9 +4867,6 @@ Wire Wire Line
 Wire Wire Line
 	14100 21200 14250 21200
 Wire Wire Line
-	12925 19050 13000 19050
-Connection ~ 13000 19050
-Wire Wire Line
 	13000 21200 13175 21200
 Wire Wire Line
 	13625 21725 13625 21800
@@ -5232,75 +4979,9 @@ Wire Wire Line
 Wire Wire Line
 	5900 14325 5900 14425
 Connection ~ 30725 13950
-Wire Wire Line
-	23275 19800 23375 19800
-Wire Wire Line
-	22750 19800 22875 19800
-Wire Wire Line
-	23675 19325 23675 19600
-Wire Wire Line
-	24925 20525 24925 20250
-Wire Wire Line
-	24500 20050 24625 20050
-Wire Wire Line
-	24575 20125 24575 20050
-Connection ~ 24575 20050
-Wire Wire Line
-	23675 20050 23675 20000
-Wire Wire Line
-	24925 19775 24925 19850
-Wire Wire Line
-	24925 19375 24925 19300
-Wire Wire Line
-	23975 18575 24175 18575
-Wire Wire Line
-	23975 18575 23975 20050
-Connection ~ 23975 20050
-Wire Wire Line
-	25375 18575 25275 18575
-Wire Wire Line
-	25275 18575 25275 19800
-Wire Wire Line
-	25275 19800 24925 19800
-Connection ~ 24925 19800
-Wire Wire Line
-	25775 18925 25975 18925
-Wire Wire Line
-	25975 18925 25975 19050
-Wire Wire Line
-	25375 18925 25275 18925
-Connection ~ 25275 18925
-Wire Wire Line
-	24050 18925 23975 18925
-Connection ~ 23975 18925
-Wire Wire Line
-	24450 18925 24650 18925
-Wire Wire Line
-	24650 18925 24650 19050
 Connection ~ 10575 11550
-Wire Wire Line
-	23675 20050 24100 20050
-Wire Wire Line
-	20350 19775 20450 19775
-Wire Wire Line
-	19825 19775 19950 19775
-Wire Wire Line
-	20750 19300 20750 19575
-Wire Wire Line
-	20750 19975 20750 20125
-Wire Wire Line
-	21175 20050 20750 20050
-Connection ~ 20750 20050
 Wire Notes Line
 	700  5675 700  5375
-Wire Notes Line
-	19100 18150 26325 18150
-Wire Notes Line
-	26325 18150 26325 21200
-Wire Notes Line
-	26325 21200 19100 21200
-Wire Notes Line
-	19100 21200 19100 18150
 Wire Wire Line
 	15000 17575 15000 17625
 Wire Wire Line
@@ -5333,12 +5014,31 @@ F 3 "" H 13750 20025 60  0000 C CNN
 	1    13750 20025
 	0    1    -1   0   
 $EndComp
-Text Notes 17000 4000 0    60   ~ 0
-CHECK FOOTPRINT!
 Text GLabel 7750 6650 0    60   Input ~ 0
 VCO2_TRI_SYM
 Text GLabel 7750 6500 0    60   Input ~ 0
 VCO1_TRI_SYM
 Text Notes 7800 6650 0    60   ~ 0
 TRI SYM CVs may no\nbe necessary. Bipolar?
+Text GLabel 2100 7100 2    60   Output ~ 0
+ENV1_POL
+Text Notes 2875 6300 0    60   ~ 0
+These are generated by \n10V signals on MCB
+Text Notes 14000 20075 0    60   ~ 0
+But 2SK932 has Vgs(max) of 15V - not good\n
+Text GLabel 13550 3675 0    60   Input ~ 0
+ENV_1
+$Comp
+L +10V #PWR?
+U 1 1 5A7C375B
+P 13525 7825
+F 0 "#PWR?" H 13525 7675 50  0001 C CNN
+F 1 "+10V" H 13525 7965 50  0000 C CNN
+F 2 "" H 13525 7825 60  0000 C CNN
+F 3 "" H 13525 7825 60  0000 C CNN
+	1    13525 7825
+	1    0    0    -1  
+$EndComp
+Text Notes 5100 8250 0    60   ~ 0
+VCO1_RANGE is only 4 values:\n6, 5, 4 or 3 V
 $EndSCHEMATC

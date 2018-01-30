@@ -331,12 +331,4 @@ Wire Wire Line
 Wire Wire Line
 	2775 3600 2350 3600
 Connection ~ 2350 3600
-Wire Notes Line
-	700  1700 7925 1700
-Wire Notes Line
-	7925 1700 7925 4750
-Wire Notes Line
-	7925 4750 700  4750
-Wire Notes Line
-	700  4750 700  1700
 $EndSCHEMATC
