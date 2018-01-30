@@ -2647,8 +2647,6 @@ F 3 "" H 15625 9925 60  0000 C CNN
 	1    15625 9925
 	-1   0    0    1   
 $EndComp
-Text Notes 8025 9650 0    60   ~ 0
-Need to add TRI SYMMETRY CV here
 $Comp
 L R_US R?
 U 1 1 5A74A21C
@@ -3434,4 +3432,8 @@ Wire Wire Line
 	23275 9975 23075 9975
 Connection ~ 23075 9975
 Connection ~ 23075 10275
+Text Notes 14750 13025 1    60   ~ 0
+GND CMOS INPUTS?
+Text Notes 28675 13025 1    60   ~ 0
+GND CMOS INPUTS?
 $EndSCHEMATC
